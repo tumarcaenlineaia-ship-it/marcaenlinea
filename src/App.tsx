@@ -1,0 +1,34 @@
+import { Navigation } from './components/Navigation';
+import { Hero } from './sections/Hero';
+import { ValueProposition } from './sections/ValueProposition';
+import { Services } from './sections/Services';
+import { Stats } from './sections/Stats';
+import { About } from './sections/About';
+import { Portfolio } from './sections/Portfolio';
+import { Contact } from './sections/Contact';
+import { Footer } from './sections/Footer';
+
+function App() {
+  return (
+    <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Main Content */}
+      <main>
+        <Hero />
+        <ValueProposition />
+        <Services />
+        <Stats />
+        <About />
+        <Portfolio />
+        <Contact />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
