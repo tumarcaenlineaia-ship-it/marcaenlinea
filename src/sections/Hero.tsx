@@ -41,6 +41,18 @@ export function Hero() {
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            className="w-full h-full object-cover"
+            src="/assetts/video1.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+
         {/* Gradient Orbs - Deep Blue */}
         <div
           className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full"
@@ -85,7 +97,7 @@ export function Hero() {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            <span className="text-xs font-semibold tracking-[0.4em] uppercase text-[#0047AB]">
+            <span className="text-xs font-semibold tracking-[0.4em] uppercase text-white">
               Agencia de Diseño Web
             </span>
           </div>
