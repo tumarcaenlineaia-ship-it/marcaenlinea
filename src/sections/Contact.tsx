@@ -327,7 +327,7 @@ export function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitted}
-                    className={`w-full md:w-auto px-12 py-4 font-semibold uppercase tracking-wider text-sm transition-all duration-300 flex items-center justify-center gap-2 ${
+                    className={`w-full md:w-auto px-12 py-4 font-semibold uppercase tracking-wider text-sm transition-all duration-300 flex items-center justify-center gap-2 rounded-full ${
                       isSubmitted
                         ? 'bg-green-600 text-white'
                         : 'bg-[#0047AB] text-white hover:bg-[#0058d1] hover:shadow-blue'

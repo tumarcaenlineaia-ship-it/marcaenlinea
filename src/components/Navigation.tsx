@@ -80,7 +80,7 @@ export function Navigation() {
             <div className="hidden lg:block">
               <button
                 onClick={() => scrollToSection('#contacto')}
-                className="px-8 py-3 bg-[#0047AB] text-white text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-[#0058d1] hover:shadow-blue"
+                className="px-8 py-3 bg-[#0047AB] text-white text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-[#0058d1] hover:shadow-blue rounded-full"
               >
                 Contacto
               </button>
@@ -142,7 +142,7 @@ export function Navigation() {
 
             <button
               onClick={() => scrollToSection('#contacto')}
-              className={`mt-10 px-8 py-4 bg-[#0047AB] text-white font-semibold uppercase tracking-wider transition-all duration-500 ${
+              className={`mt-10 px-8 py-4 bg-[#0047AB] text-white font-semibold uppercase tracking-wider transition-all duration-500 rounded-full ${
                 isMobileMenuOpen
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-10'
