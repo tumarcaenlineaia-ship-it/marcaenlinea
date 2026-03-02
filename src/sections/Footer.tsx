@@ -66,14 +66,11 @@ export function Footer() {
                 }}
                 className="flex items-center gap-3 mb-6 group"
               >
-                <div className="w-12 h-12 bg-[#0047AB] flex items-center justify-center transition-all duration-300 group-hover:shadow-blue">
-                  <span className="text-white font-display font-bold text-2xl">
-                    A
-                  </span>
-                </div>
-                <span className="text-white font-display font-semibold text-xl">
-                  Agencia
-                </span>
+                <img
+                  src="/assetts/logo.png"
+                  alt="Logo"
+                  className="w-24 h-auto"
+                />
               </a>
               <p className="text-white/40 text-sm leading-relaxed">
                 Diseño web profesional que impulsa tu negocio. Creamos
@@ -102,7 +99,7 @@ export function Footer() {
                         e.preventDefault();
                         scrollToSection(link.href);
                       }}
-                      className="text-white/40 text-sm hover:text-[#0047AB] transition-all duration-300 inline-flex items-center gap-1 group"
+                      className="text-white/40 text-sm hover:text-[#0088FF] transition-all duration-300 inline-flex items-center gap-1 group"
                     >
                       <span className="group-hover:translate-x-1 transition-transform duration-300">
                         {link.label}
@@ -134,7 +131,7 @@ export function Footer() {
                         e.preventDefault();
                         scrollToSection('#servicios');
                       }}
-                      className="text-white/40 text-sm hover:text-[#0047AB] transition-all duration-300 inline-flex items-center gap-1 group"
+                      className="text-white/40 text-sm hover:text-[#0088FF] transition-all duration-300 inline-flex items-center gap-1 group"
                     >
                       <span className="group-hover:translate-x-1 transition-transform duration-300">
                         {service}
@@ -165,7 +162,7 @@ export function Footer() {
                       key={social.label}
                       href={social.href}
                       aria-label={social.label}
-                      className="w-11 h-11 border border-white/10 flex items-center justify-center text-white/40 hover:text-[#0047AB] hover:border-[#0047AB] transition-all duration-300"
+                      className="w-11 h-11 border border-white/10 flex items-center justify-center text-white/40 hover:text-[#0088FF] hover:border-[#0088FF] transition-all duration-300"
                     >
                       <Icon size={18} />
                     </a>
@@ -180,7 +177,7 @@ export function Footer() {
                   e.preventDefault();
                   scrollToSection('#contacto');
                 }}
-                className="inline-flex items-center gap-2 mt-8 text-[#0047AB] text-sm font-medium hover:gap-3 transition-all duration-300"
+                className="inline-flex items-center gap-2 mt-8 text-[#0088FF] text-sm font-medium hover:gap-3 transition-all duration-300"
               >
                 Iniciar proyecto
                 <ArrowUpRight size={16} />
@@ -203,13 +200,13 @@ export function Footer() {
             <div className="flex gap-8">
               <a
                 href="#"
-                className="text-white/30 text-sm hover:text-[#0047AB] transition-colors duration-300"
+                className="text-white/30 text-sm hover:text-[#0088FF] transition-colors duration-300"
               >
                 Política de privacidad
               </a>
               <a
                 href="#"
-                className="text-white/30 text-sm hover:text-[#0047AB] transition-colors duration-300"
+                className="text-white/30 text-sm hover:text-[#0088FF] transition-colors duration-300"
               >
                 Términos de servicio
               </a>
@@ -220,3 +217,4 @@ export function Footer() {
     </footer>
   );
 }
+

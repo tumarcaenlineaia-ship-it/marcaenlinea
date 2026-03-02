@@ -1,6 +1,5 @@
 import { Navigation } from './components/Navigation';
 import { Hero } from './sections/Hero';
-import { ValueProposition } from './sections/ValueProposition';
 import { Services } from './sections/Services';
 import { Stats } from './sections/Stats';
 import { About } from './sections/About';
@@ -17,7 +16,6 @@ function App() {
       {/* Main Content */}
       <main>
         <Hero />
-        <ValueProposition />
         <Services />
         <Stats />
         <About />
@@ -32,3 +30,4 @@ function App() {
 }
 
 export default App;
+

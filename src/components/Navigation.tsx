@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from '../../assetts/logo.png';
 
 const menuItems = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Nosotros', href: '#nosotros' },
   { label: 'Servicios', href: '#servicios' },
   { label: 'Portafolio', href: '#portafolio' },
+  { label: 'Nosotros', href: '#nosotros' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
@@ -35,8 +36,8 @@ export function Navigation() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-expo-out ${
           isScrolled
-            ? 'glass border-b border-white/10 py-3'
-            : 'bg-transparent py-6'
+            ? 'bg-black/80 backdrop-blur-md border-b border-white/10 py-0'
+            : 'bg-transparent py-4'
         }`}
       >
         <div className="w-full px-6 lg:px-16">
@@ -50,12 +51,11 @@ export function Navigation() {
               }}
               className="flex items-center gap-3 group"
             >
-              <div className="w-12 h-12 bg-[#0047AB] flex items-center justify-center transition-all duration-300 group-hover:shadow-blue">
-                <span className="text-white font-display font-bold text-2xl">A</span>
-              </div>
-              <span className="text-white font-display font-semibold text-xl hidden sm:block">
-                Agencia
-              </span>
+              <img 
+                src={Logo} 
+                alt="Logo" 
+                className="h-auto max-w-[360px] object-contain"
+              />
             </a>
 
             {/* Desktop Menu */}
@@ -71,7 +71,7 @@ export function Navigation() {
                   className="relative text-white/70 hover:text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 group"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0047AB] transition-all duration-300 ease-expo-out group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0088FF] transition-all duration-300 ease-expo-out group-hover:w-full" />
                 </a>
               ))}
             </div>
@@ -80,7 +80,7 @@ export function Navigation() {
             <div className="hidden lg:block">
               <button
                 onClick={() => scrollToSection('#contacto')}
-                className="px-8 py-3 bg-[#0047AB] text-white text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-[#0058d1] hover:shadow-blue rounded-full"
+                className="px-8 py-3 bg-[#0088FF] text-white text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:bg-[#0058d1] hover:shadow-blue rounded-full"
               >
                 Contacto
               </button>
@@ -127,7 +127,7 @@ export function Navigation() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className={`py-5 text-xl font-display font-semibold text-white/80 hover:text-[#0047AB] transition-all duration-300 border-b border-white/10 uppercase tracking-wide ${
+                className={`py-5 text-xl font-display font-semibold text-white/80 hover:text-[#0088FF] transition-all duration-300 border-b border-white/10 uppercase tracking-wide ${
                   isMobileMenuOpen
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-0 translate-x-10'
@@ -142,7 +142,7 @@ export function Navigation() {
 
             <button
               onClick={() => scrollToSection('#contacto')}
-              className={`mt-10 px-8 py-4 bg-[#0047AB] text-white font-semibold uppercase tracking-wider transition-all duration-500 rounded-full ${
+              className={`mt-10 px-8 py-4 bg-[#0088FF] text-white font-semibold uppercase tracking-wider transition-all duration-500 rounded-full ${
                 isMobileMenuOpen
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-10'
@@ -159,3 +159,4 @@ export function Navigation() {
     </>
   );
 }
+

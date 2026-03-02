@@ -118,7 +118,7 @@ export function Services() {
             return (
               <div
                 key={service.title}
-                className={`group relative p-8 lg:p-10 bg-black transition-all duration-500 ease-expo-out hover:bg-[#0047AB]/5 ${
+                className={`group relative p-8 lg:p-10 bg-black transition-all duration-500 ease-expo-out hover:bg-[#0088FF]/5 ${
                   gridVisible
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-10'
@@ -129,11 +129,11 @@ export function Services() {
               >
                 {/* Icon */}
                 <div className="w-12 h-12 mb-6 flex items-center justify-center">
-                  <Icon className="w-8 h-8 text-[#0047AB] transition-all duration-300 group-hover:scale-110" strokeWidth={1.5} />
+                  <Icon className="w-8 h-8 text-[#0088FF] transition-all duration-300 group-hover:scale-110" strokeWidth={1.5} />
                 </div>
 
                 {/* Title */}
-                <h3 className="font-display font-semibold text-xl text-white mb-4 transition-all duration-300 group-hover:text-[#0047AB]">
+                <h3 className="font-display font-semibold text-xl text-white mb-4 transition-all duration-300 group-hover:text-[#0088FF]">
                   {service.title}
                 </h3>
 
@@ -149,7 +149,7 @@ export function Services() {
                     e.preventDefault();
                     document.querySelector('#contacto')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="inline-flex items-center gap-2 text-[#0047AB] text-sm font-medium transition-all duration-300 group-hover:gap-3"
+                  className="inline-flex items-center gap-2 text-[#0088FF] text-sm font-medium transition-all duration-300 group-hover:gap-3"
                 >
                   Solicitar info
                   <ArrowRight
@@ -159,7 +159,7 @@ export function Services() {
                 </a>
 
                 {/* Hover Border */}
-                <div className="absolute inset-0 border border-transparent transition-all duration-300 group-hover:border-[#0047AB]/30 pointer-events-none" />
+                <div className="absolute inset-0 border border-transparent transition-all duration-300 group-hover:border-[#0088FF]/30 pointer-events-none" />
               </div>
             );
           })}
@@ -168,3 +168,4 @@ export function Services() {
     </section>
   );
 }
+

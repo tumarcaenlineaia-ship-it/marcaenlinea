@@ -27,7 +27,7 @@ export function ValueProposition() {
             }`}
           >
             Tu presencia digital,{' '}
-            <span className="text-[#0047AB]">bien hecha</span> desde el inicio
+            <span className="text-[#0088FF]">bien hecha</span> desde el inicio
           </h2>
 
           {/* Body Text */}
@@ -51,3 +51,4 @@ export function ValueProposition() {
     </section>
   );
 }
+

@@ -49,7 +49,7 @@ export function About() {
                 style={{ transitionDelay: '100ms' }}
               >
                 Somos un equipo especializado en{' '}
-                <span className="text-[#0047AB]">diseño y desarrollo web</span>
+                <span className="text-[#0088FF]">diseño y desarrollo web</span>
               </h2>
 
               <div
@@ -85,7 +85,7 @@ export function About() {
                 {features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="w-4 h-4 text-[#0047AB]" strokeWidth={2} />
+                      <CheckCircle className="w-4 h-4 text-[#0088FF]" strokeWidth={2} />
                     </div>
                     <span className="text-sm text-white/60">{feature}</span>
                   </div>
@@ -105,7 +105,7 @@ export function About() {
               <div className="relative aspect-square max-w-md mx-auto">
                 {/* Main Circle */}
                 <div 
-                  className="absolute inset-0 rounded-full border border-[#0047AB]/20"
+                  className="absolute inset-0 rounded-full border border-[#0088FF]/20"
                   style={{
                     background: 'linear-gradient(135deg, rgba(0,71,171,0.1) 0%, transparent 50%)',
                   }}
@@ -122,7 +122,7 @@ export function About() {
                 {/* Center Content */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-24 h-24 bg-[#0047AB] flex items-center justify-center mx-auto mb-6 shadow-blue">
+                    <div className="w-24 h-24 bg-[#0088FF] flex items-center justify-center mx-auto mb-6 shadow-blue">
                       <span className="text-white font-display font-bold text-4xl">
                         A
                       </span>
@@ -130,13 +130,13 @@ export function About() {
                     <p className="text-white font-display font-semibold text-xl">
                       Agencia
                     </p>
-                    <p className="text-[#0047AB] text-sm uppercase tracking-wider mt-1">Diseño Web</p>
+                    <p className="text-[#0088FF] text-sm uppercase tracking-wider mt-1">Diseño Web</p>
                   </div>
                 </div>
 
                 {/* Orbiting Elements */}
                 <div className="absolute inset-0 animate-spin" style={{ animationDuration: '25s' }}>
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#0047AB] rounded-full shadow-blue" />
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#0088FF] rounded-full shadow-blue" />
                 </div>
                 <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                   <div className="absolute bottom-12 right-12 w-2 h-2 bg-white/30 rounded-full" />
@@ -149,3 +149,4 @@ export function About() {
     </section>
   );
 }
+

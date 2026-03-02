@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, MessageCircle } from 'lucide-react';
 
 const services = [
   'Landing Page Autoadministrable',
@@ -109,7 +109,7 @@ export function Contact() {
               }`}
               style={{ transitionDelay: '100ms' }}
             >
-              Hablemos sobre tu <span className="text-[#0047AB]">proyecto</span>
+              Hablemos sobre tu <span className="text-[#0088FF]">proyecto</span>
             </h2>
             <p
               className={`text-lg text-white/50 leading-relaxed transition-all duration-600 ease-smooth ${
@@ -136,29 +136,29 @@ export function Contact() {
             >
               <div className="space-y-6">
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 border border-[#0047AB]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0047AB]/10 group-hover:border-[#0047AB]">
-                    <Mail className="w-5 h-5 text-[#0047AB]" />
+                  <div className="w-12 h-12 border border-[#0088FF]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0088FF]/10 group-hover:border-[#0088FF]">
+                    <Mail className="w-5 h-5 text-[#0088FF]" />
                   </div>
                   <div>
                     <p className="text-sm text-white/40 mb-1 uppercase tracking-wider">Email</p>
                     <a
-                      href="mailto:contacto@agencia.com"
-                      className="text-white hover:text-[#0047AB] transition-colors duration-300"
+                      href="mailto:contacto@mimarcaenlinea.cl"
+                      className="text-white hover:text-[#0088FF] transition-colors duration-300"
                     >
-                      contacto@agencia.com
+                      contacto@mimarcaenlinea.cl
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 border border-[#0047AB]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0047AB]/10 group-hover:border-[#0047AB]">
-                    <Phone className="w-5 h-5 text-[#0047AB]" />
+                  <div className="w-12 h-12 border border-[#0088FF]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0088FF]/10 group-hover:border-[#0088FF]">
+                    <Phone className="w-5 h-5 text-[#0088FF]" />
                   </div>
                   <div>
                     <p className="text-sm text-white/40 mb-1 uppercase tracking-wider">Teléfono</p>
                     <a
                       href="tel:+56912345678"
-                      className="text-white hover:text-[#0047AB] transition-colors duration-300"
+                      className="text-white hover:text-[#0088FF] transition-colors duration-300"
                     >
                       +56 9 1234 5678
                     </a>
@@ -166,8 +166,25 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 border border-[#0047AB]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0047AB]/10 group-hover:border-[#0047AB]">
-                    <MapPin className="w-5 h-5 text-[#0047AB]" />
+                  <div className="w-12 h-12 border border-[#0088FF]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0088FF]/10 group-hover:border-[#0088FF]">
+                    <MessageCircle className="w-5 h-5 text-[#0088FF]" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/40 mb-1 uppercase tracking-wider">WhatsApp</p>
+                    <a
+                      href="https://wa.me/56912345678"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-[#0088FF] transition-colors duration-300"
+                    >
+                      +56 9 1234 5678
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="w-12 h-12 border border-[#0088FF]/30 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#0088FF]/10 group-hover:border-[#0088FF]">
+                    <MapPin className="w-5 h-5 text-[#0088FF]" />
                   </div>
                   <div>
                     <p className="text-sm text-white/40 mb-1 uppercase tracking-wider">Ubicación</p>
@@ -200,7 +217,7 @@ export function Contact() {
                   {/* Nombre */}
                   <div>
                     <label className="block text-sm text-white/60 mb-2 uppercase tracking-wider">
-                      Nombre <span className="text-[#0047AB]">*</span>
+                      Nombre <span className="text-[#0088FF]">*</span>
                     </label>
                     <input
                       type="text"
@@ -309,7 +326,7 @@ export function Contact() {
                 {/* Mensaje */}
                 <div>
                   <label className="block text-sm text-white/60 mb-2 uppercase tracking-wider">
-                    Mensaje <span className="text-[#0047AB]">*</span>
+                    Mensaje <span className="text-[#0088FF]">*</span>
                   </label>
                   <textarea
                     name="mensaje"
@@ -330,7 +347,7 @@ export function Contact() {
                     className={`w-full md:w-auto px-12 py-4 font-semibold uppercase tracking-wider text-sm transition-all duration-300 flex items-center justify-center gap-2 rounded-full ${
                       isSubmitted
                         ? 'bg-green-600 text-white'
-                        : 'bg-[#0047AB] text-white hover:bg-[#0058d1] hover:shadow-blue'
+                        : 'bg-[#0088FF] text-white hover:bg-[#0058d1] hover:shadow-blue'
                     }`}
                   >
                     {isSubmitted ? (
@@ -354,3 +371,4 @@ export function Contact() {
     </section>
   );
 }
+

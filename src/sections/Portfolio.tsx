@@ -74,7 +74,7 @@ export function Portfolio() {
             }`}
             style={{ transitionDelay: '100ms' }}
           >
-            Proyectos y <span className="text-[#0047AB]">colaboraciones</span>
+            Proyectos y <span className="text-[#0088FF]">colaboraciones</span>
           </h2>
           <p
             className={`text-lg text-white/50 max-w-2xl leading-relaxed transition-all duration-600 ease-smooth ${
@@ -136,7 +136,7 @@ export function Portfolio() {
                     <span className="px-3 py-1 bg-white/5 border border-white/10 text-xs text-white/60 uppercase tracking-wider">
                       {project.category}
                     </span>
-                    <div className="w-10 h-10 bg-[#0047AB] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
+                    <div className="w-10 h-10 bg-[#0088FF] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
                       <ArrowUpRight className="w-5 h-5 text-white" />
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export function Portfolio() {
                 </div>
 
                 {/* Hover Border */}
-                <div className="absolute inset-0 border border-transparent group-hover:border-[#0047AB]/40 transition-all duration-300 pointer-events-none" />
+                <div className="absolute inset-0 border border-transparent group-hover:border-[#0088FF]/40 transition-all duration-300 pointer-events-none" />
               </div>
             );
           })}
@@ -174,7 +174,7 @@ export function Portfolio() {
               e.preventDefault();
               document.querySelector('#contacto')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-flex items-center gap-2 text-[#0047AB] font-medium hover:gap-3 transition-all duration-300"
+            className="inline-flex items-center gap-2 text-[#0088FF] font-medium hover:gap-3 transition-all duration-300"
           >
             ¿Tienes un proyecto en mente? Hablemos
             <ArrowUpRight size={18} />
@@ -184,3 +184,4 @@ export function Portfolio() {
     </section>
   );
 }
+
